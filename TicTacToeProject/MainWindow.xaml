@@ -1,0 +1,31 @@
+﻿<Window x:Class="TicTacToeProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToeProject"
+        mc:Ignorable="d"
+        Title="GameBoard" Height="450" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Name="btn1" Click="Button_Click" FontSize="55" Background="#FF690060" BorderBrush="#FFDAC802" />
+        <Button Grid.Row="0" Grid.Column="1" Name="btn2" Click="Button_Click" FontSize="55" Background="#FF86037B" BorderBrush="#FFDAC802" />
+        <Button Grid.Row="0" Grid.Column="2" Name="btn3" Click="Button_Click" FontSize="55" Background="#FF690060" BorderBrush="#FFDAC802" />
+        <Button Grid.Row="1" Grid.Column="0" Name="btn4" Click="Button_Click" FontSize="55" Background="#FF86037B" BorderBrush="#FFDAC802" />
+        <Button Grid.Row="1" Grid.Column="1" Name="btn5" Click="Button_Click" FontSize="55" Background="#FF690060" BorderBrush="#FFDAC802" />
+        <Button Grid.Row="1" Grid.Column="2" Name="btn6" Click="Button_Click" FontSize="55" Background="#FF86037B" BorderBrush="#FFDAC802" />
+        <Button Grid.Row="2" Grid.Column="0" Name="btn7" Click="Button_Click" FontSize="55" Background="#FF690060" BorderBrush="#FFDAC802" />
+        <Button Grid.Row="2" Grid.Column="1" Name="btn8" Click="Button_Click" FontSize="55" Background="#FF86037B" BorderBrush="#FFDAC802" />
+        <Button Grid.Row="2" Grid.Column="2" Name="btn9" Click="Button_Click" FontSize="55" Background="#FF690060" BorderBrush="#FFDAC802" />
+
+    </Grid>
+</Window>
