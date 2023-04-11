@@ -21,8 +21,6 @@ namespace TicTacToeProject
         #region Private Fields
         private bool player1Turn = true;
         private int turnCount = 0;
-        private bool tieEnd = true;
-        #endregion
 
         public MainWindow()
         {
