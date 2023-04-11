@@ -16,9 +16,12 @@ using System.Windows.Shapes;
 // Portions that I understand have been taken from ChatGPT with some of them having been modified a bit to fit the code
 namespace TicTacToeProject
 {
+    //Week 1 Finialization Begin ------------------------------------------------------------
     public partial class MainWindow : Window
     {
-        #region Private Fields
+
+        #region Private Fields and MainWindow
+
         private bool player1Turn = true;
         private int turnCount = 0;
 
@@ -26,8 +29,11 @@ namespace TicTacToeProject
         {
             InitializeComponent();
         }
+        
+        #endregion
 
         #region on a Button_Click
+
         public void Button_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
@@ -40,6 +46,10 @@ namespace TicTacToeProject
                 button.Content = "☣";
             }
 
+            //Week 1 Finialization End ------------------------------------------------------------
+
+            //Week 2 Finialization Begin ------------------------------------------------------------
+
             button.IsEnabled = false;
             turnCount++;
 
@@ -50,13 +60,13 @@ namespace TicTacToeProject
                 {
                     //throw new Exception("Testing");
                     // Player 1 wins
-                    MessageBox.Show("<Player ☢ Wins>");
+                    MessageBox.Show("<Player ☢ Wins?>");
                 }
                 else
                 {
                     //throw new Exception("Testing");
                     // Player 2 wins
-                    MessageBox.Show("<Player ☣ Wins>");
+                    MessageBox.Show("<Player ☣ Wins?>");
                 }
 
                 #region not required code, it's just for my own intertainment
@@ -68,18 +78,31 @@ namespace TicTacToeProject
                 }
                 if (turnCount == 5)
                 {
-                    //Just some secret stuff
+                    //Just some more easter eggs
                     MessageBox.Show("┗|｀O′|┛");
+                }
+                if (turnCount < 3)
+                {
+                    //throw new Exeption("testing"();
+                    MessageBox.Show("(⊙_⊙)？");
+                }
+                if (turnCount == 1)
+                {
+                    //throw new Exeption("testing"();
+                    MessageBox.Show("Oh my God, he's pulling his hacks out");
                 }
 
                 #endregion
 
+                //Week 2 Finialization End ------------------------------------------------------------
+
+                //Week 3 Finalization Begin ------------------------------------------------------------
             }
             else if (turnCount == 9)
             {
-                //throw new Exeption("testing"();
+                //throw new Exeption("testing");
                 // No one wins
-                MessageBox.Show("<Games a tie>");
+                MessageBox.Show("<The Game is a a tie?>");
             }
             // The thing below was taken from ChatGPT
             else
@@ -88,9 +111,16 @@ namespace TicTacToeProject
                 player1Turn = !player1Turn;
             }
         }
+
         #endregion
 
         #region CheckForWinner
+
+        // The CheckForWinner is also from ChatGPT but I am looking to
+        // remove it and replace it with my own code if I think of a way
+        // to code this portion, though I might just leave it
+        // Update: As of 3/29/2023 I have decided that I will leave the CheckForWinner as it currently is
+
         public bool CheckForWinner()
         {
             // Check the rows for a win
@@ -117,9 +147,15 @@ namespace TicTacToeProject
             }
             
         }
+
         #endregion
 
+        // Week 3 Finalization End ------------------------------------------------------------
+
+        // Week 4 Finalization Begin ------------------------------------------------------------
+
         #region CheckLine Method
+
         public bool CheckLine(Button btn1, Button btn2, Button btn3)
         {
             if (btn1.IsEnabled == false && btn2.IsEnabled == false && btn3.IsEnabled == false &&
@@ -133,10 +169,11 @@ namespace TicTacToeProject
                 return false;
             }
         }
+
         #endregion
 
         #region DisableAllButtons
-        // The thing below was taken from ChatGPT
+
         private void DisableAllButtons()
         {
             btn1.IsEnabled = false;
@@ -149,6 +186,10 @@ namespace TicTacToeProject
             btn8.IsEnabled = false;
             btn9.IsEnabled = false;
         }
+
         #endregion
+
+        // Week 4 Finalization End ------------------------------------------------------------
+
     }
 }
