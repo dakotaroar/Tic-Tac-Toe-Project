@@ -34,6 +34,11 @@ namespace TicTacToeProject
 
         #region on a Button_Click
 
+        /*
+         On each click of the button do the following: make the button 
+         content change depending on which player's turn it is when the button is 
+         clicked, checks for winner and displays who wins based on the player turn.
+        */
         public void Button_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
@@ -70,6 +75,7 @@ namespace TicTacToeProject
                 }
 
                 #region not required code, it's just for my own intertainment
+                // Just a bunch of code that I added for fun
 
                 if (turnCount == 8)
                 {
@@ -83,13 +89,14 @@ namespace TicTacToeProject
                 }
                 if (turnCount < 3)
                 {
-                    //throw new Exeption("testing"();
+                    //throw new Exception("Testing");
                     MessageBox.Show("(⊙_⊙)？");
                 }
                 if (turnCount == 1)
                 {
-                    //throw new Exeption("testing"();
+                    //throw new Exception("Testing");
                     MessageBox.Show("Oh my God, he's pulling his hacks out");
+                    
                 }
 
                 #endregion
@@ -98,13 +105,14 @@ namespace TicTacToeProject
 
                 //Week 3 Finalization Begin ------------------------------------------------------------
             }
+
+            // If turn count reaches 9, when all buttons have been clicked, it displays that the game was a tie.
             else if (turnCount == 9)
             {
-                //throw new Exeption("testing");
+                //throw new Exception("Testing");
                 // No one wins
                 MessageBox.Show("<The Game is a a tie?>");
             }
-            // The thing below was taken from ChatGPT
             else
             {
                 //turn switches to next player
@@ -116,10 +124,12 @@ namespace TicTacToeProject
 
         #region CheckForWinner
 
-        // The CheckForWinner is also from ChatGPT but I am looking to
-        // remove it and replace it with my own code if I think of a way
-        // to code this portion, though I might just leave it
-        // Update: As of 3/29/2023 I have decided that I will leave the CheckForWinner as it currently is
+        /* 
+         The CheckForWinner is also from ChatGPT but I am looking to
+         remove it and replace it with my own code if I think of a way
+         to code this portion, though I might just leave it
+         Update: As of 3/29/2023 I have decided that I will leave the CheckForWinner as it currently is
+        */
 
         public bool CheckForWinner()
         {
