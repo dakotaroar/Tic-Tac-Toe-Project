@@ -86,6 +86,10 @@ namespace TicTacToeProject
                  These "easter egg" codes work by when CheckForWinner is true, it checks not just for which player's turn it
                  is like it normally does, it also checks for if it matches the requirments for one of the "easter egg" code.
                 */ 
+                if (turnCount == 9)
+                {
+                    MessageBox.Show("One of us is a robot(⊙ˍ⊙)(⊙ˍ⊙)");
+                }
                 if (turnCount == 8)
                 {
                     //throw new Exception("Testing");
