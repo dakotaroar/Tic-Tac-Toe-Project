@@ -13,10 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-// Portions that I understand have been taken from ChatGPT with some of them having been modified a bit to fit the code
+// Portions that I understand have been taken from ChatGPT with some of them having been modified a bit to fit into the code
 namespace TicTacToeProject
 {
-    //Week 1 Finialization Begin ------------------------------------------------------------
+    //------------------------------------------------------------ Week 1 Finialization Begin ------------------------------------------------------------
     public partial class MainWindow : Window
     {
 
@@ -35,7 +35,7 @@ namespace TicTacToeProject
         #region on a Button_Click
 
         /*
-         On each click of the button do the following: make the button 
+         On each click of the button it does the following: make the button 
          content change depending on which player's turn it is when the button is 
          clicked, checks for winner and displays who wins based on the player turn.
         */
@@ -51,59 +51,67 @@ namespace TicTacToeProject
                 button.Content = "☣";
             }
 
-            //Week 1 Finialization End ------------------------------------------------------------
+            //------------------------------------------------------------ Week 1 Finialization End ------------------------------------------------------------
 
-            //Week 2 Finialization Begin ------------------------------------------------------------
+            //------------------------------------------------------------ Week 2 Finialization Begin ------------------------------------------------------------
 
+            // Disables the button when clicked
             button.IsEnabled = false;
             turnCount++;
 
+            /*
+              When CheckForWinner returns true, it checks if whether or not its player 1's turn, if so then it
+              says they one, if not then it says that player 2 wins. 
+            */
             if (CheckForWinner())
             {
                 DisableAllButtons();
                 if (player1Turn)
                 {
                     //throw new Exception("Testing");
-                    // Player 1 wins
+                    // displays that player 1 wins
                     MessageBox.Show("<Player ☢ Wins?>");
                 }
                 else
                 {
                     //throw new Exception("Testing");
-                    // Player 2 wins
+                    // displays that player 2 wins
                     MessageBox.Show("<Player ☣ Wins?>");
                 }
 
                 #region not required code, it's just for my own intertainment
-                // Just a bunch of code that I added for fun
+                // Just a bunch of code that I added for fun and to add personality
 
+                /*
+                 These "easter egg" codes work by when CheckForWinner is true, it checks not just for which player's turn it
+                 is like it normally does, it also checks for if it matches the requirments for one of the "easter egg" code.
+                */ 
                 if (turnCount == 8)
                 {
+                    //throw new Exception("Testing");
                     //This is just a easter egg
                     MessageBox.Show("Big Brother Is Watching you (•_•) (•ˋ _ ˊ•)");
                 }
                 if (turnCount == 5)
                 {
+                    //throw new Exception("Testing");
                     //Just some more easter eggs
                     MessageBox.Show("┗|｀O′|┛");
                 }
                 if (turnCount < 3)
                 {
-                    //throw new Exception("Testing");
                     MessageBox.Show("(⊙_⊙)？");
                 }
                 if (turnCount == 1)
                 {
-                    //throw new Exception("Testing");
-                    MessageBox.Show("Oh my God, he's pulling his hacks out");
-                    
+                    MessageBox.Show("Oh my God, he's pulling his hacks out!");
                 }
 
                 #endregion
 
-                //Week 2 Finialization End ------------------------------------------------------------
+                //------------------------------------------------------------ Week 2 Finialization End ------------------------------------------------------------
 
-                //Week 3 Finalization Begin ------------------------------------------------------------
+                //------------------------------------------------------------ Week 3 Finalization Begin ------------------------------------------------------------
             }
 
             // If turn count reaches 9, when all buttons have been clicked, it displays that the game was a tie.
@@ -125,10 +133,8 @@ namespace TicTacToeProject
         #region CheckForWinner
 
         /* 
-         The CheckForWinner is also from ChatGPT but I am looking to
-         remove it and replace it with my own code if I think of a way
-         to code this portion, though I might just leave it
-         Update: As of 3/29/2023 I have decided that I will leave the CheckForWinner as it currently is
+         CheckForWinner is a boolian which every turn checks if a player matches one of the conditions
+         needed to win it returns true. When CheckForWinner is run when no player meets the requirements it returns false.
         */
 
         public bool CheckForWinner()
@@ -160,9 +166,9 @@ namespace TicTacToeProject
 
         #endregion
 
-        // Week 3 Finalization End ------------------------------------------------------------
+        //------------------------------------------------------------ Week 3 Finalization End ------------------------------------------------------------
 
-        // Week 4 Finalization Begin ------------------------------------------------------------
+        //------------------------------------------------------------ Week 4 Finalization Begin ------------------------------------------------------------
 
         #region CheckLine Method
 
@@ -199,7 +205,7 @@ namespace TicTacToeProject
 
         #endregion
 
-        // Week 4 Finalization End ------------------------------------------------------------
+        //------------------------------------------------------------ Week 4 Finalization End ------------------------------------------------------------
 
     }
 }

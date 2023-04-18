@@ -17,7 +17,11 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Row="0" Grid.Column="0" Name="btn1" Click="Button_Click" FontSize="55" Background="#FF690060" BorderBrush="#FFDAC802" />
+        <Button Grid.Row="0" Grid.Column="0" Name="btn1" Click="Button_Click" FontSize="55" BorderBrush="#FFDAC802" >
+            <Button.Background>
+                <SolidColorBrush Color="#FF690060" Opacity="1"/>
+            </Button.Background>
+        </Button>
         <Button Grid.Row="0" Grid.Column="1" Name="btn2" Click="Button_Click" FontSize="55" Background="#FF86037B" BorderBrush="#FFDAC802" />
         <Button Grid.Row="0" Grid.Column="2" Name="btn3" Click="Button_Click" FontSize="55" Background="#FF690060" BorderBrush="#FFDAC802" />
         <Button Grid.Row="1" Grid.Column="0" Name="btn4" Click="Button_Click" FontSize="55" Background="#FF86037B" BorderBrush="#FFDAC802" />
