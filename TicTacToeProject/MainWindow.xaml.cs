@@ -29,15 +29,50 @@ namespace TicTacToeProject
         {
             InitializeComponent();
         }
-        
+
         #endregion
 
-        #region on a Button_Click
+        #region NewGame and RestartButton_Click
+
+        // NewGame makes the turn count go back to 0, clears the content of the buttons, and re-enables the buttons.
+        private void NewGame()
+        {
+            turnCount = 0;
+            btn1.Content = "";
+            btn2.Content = "";
+            btn3.Content = "";
+            btn4.Content = "";
+            btn5.Content = "";
+            btn6.Content = "";
+            btn7.Content = "";
+            btn8.Content = "";
+            btn9.Content = "";
+
+            btn1.IsEnabled = true;
+            btn2.IsEnabled = true;
+            btn3.IsEnabled = true;
+            btn4.IsEnabled = true;
+            btn5.IsEnabled = true;
+            btn6.IsEnabled = true;
+            btn7.IsEnabled = true;
+            btn8.IsEnabled = true;
+            btn9.IsEnabled = true;
+        }
+
+        // When the RestartButton is clicked, it runs NewGame
+        private void RestartButton_Click(object sender, RoutedEventArgs e)
+        {
+            NewGame();
+        }
+
+        #endregion
+
+        #region Button_Click
 
         /*
          On each click of the button it does the following: make the button 
          content change depending on which player's turn it is when the button is 
-         clicked, checks for winner and displays who wins based on the player turn.
+         clicked, checks for winner and displays who wins based on whethor or not it's player1's turn.
         */
         public void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -51,9 +86,9 @@ namespace TicTacToeProject
                 button.Content = "☣";
             }
 
-            //------------------------------------------------------------ Week 1 Finialization End ------------------------------------------------------------
+            //----------------------------------------------------------- Week 1 Finialization End -------------------------------------------------------------
 
-            //------------------------------------------------------------ Week 2 Finialization Begin ------------------------------------------------------------
+            //----------------------------------------------------------- Week 2 Finialization Begin -----------------------------------------------------------
 
             // Disables the button when clicked
             button.IsEnabled = false;
@@ -69,13 +104,13 @@ namespace TicTacToeProject
                 if (player1Turn)
                 {
                     //throw new Exception("Testing");
-                    // displays that player 1 wins
+                    // displays that player1 wins
                     MessageBox.Show("<Player ☢ Wins?>");
                 }
                 else
                 {
                     //throw new Exception("Testing");
-                    // displays that player 2 wins
+                    // displays that player2 wins
                     MessageBox.Show("<Player ☣ Wins?>");
                 }
 
@@ -88,12 +123,14 @@ namespace TicTacToeProject
                 */ 
                 if (turnCount == 9)
                 {
+                    //throw new Exception("Testing");
+                    //This is just a easter egg
                     MessageBox.Show("One of us is a robot(⊙ˍ⊙)(⊙ˍ⊙)");
                 }
                 if (turnCount == 8)
                 {
                     //throw new Exception("Testing");
-                    //This is just a easter egg
+                    //Just some more easter eggs
                     MessageBox.Show("Big Brother Is Watching you (•_•) (•ˋ _ ˊ•)");
                 }
                 if (turnCount == 5)
@@ -104,10 +141,12 @@ namespace TicTacToeProject
                 }
                 if (turnCount < 3)
                 {
+                    //Just some more easter eggs
                     MessageBox.Show("(⊙_⊙)？");
                 }
                 if (turnCount == 1)
                 {
+                    //Just some more easter eggs
                     MessageBox.Show("Oh my God, he's pulling his hacks out!");
                 }
 
@@ -115,7 +154,7 @@ namespace TicTacToeProject
 
                 //------------------------------------------------------------ Week 2 Finialization End ------------------------------------------------------------
 
-                //------------------------------------------------------------ Week 3 Finalization Begin ------------------------------------------------------------
+                //------------------------------------------------------------ Week 3 Finalization Begin -----------------------------------------------------------
             }
 
             // If turn count reaches 9, when all buttons have been clicked, it displays that the game was a tie.
@@ -123,7 +162,7 @@ namespace TicTacToeProject
             {
                 //throw new Exception("Testing");
                 // No one wins
-                MessageBox.Show("<The Game is a a tie?>");
+                MessageBox.Show("<The Game is a a tie, lulz>");
             }
             else
             {
@@ -172,7 +211,7 @@ namespace TicTacToeProject
 
         //------------------------------------------------------------ Week 3 Finalization End ------------------------------------------------------------
 
-        //------------------------------------------------------------ Week 4 Finalization Begin ------------------------------------------------------------
+        //------------------------------------------------------------ Week 4 Finalization Begin ----------------------------------------------------------
 
         #region CheckLine Method
 
@@ -208,6 +247,8 @@ namespace TicTacToeProject
         }
 
         #endregion
+
+        
 
         //------------------------------------------------------------ Week 4 Finalization End ------------------------------------------------------------
 
