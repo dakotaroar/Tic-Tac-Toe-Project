@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-// Portions that I understand have been taken from ChatGPT with some of them having been modified a bit to fit into the code
+
 namespace TicTacToeProject
 {
     //------------------------------------------------------------ Week 1 Finialization Begin ------------------------------------------------------------

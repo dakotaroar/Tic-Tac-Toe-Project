@@ -28,7 +28,7 @@
         <Button Grid.Row="2" Grid.Column="0" Name="btn7" Click="Button_Click" FontSize="100" Background="#FF690060" BorderBrush="#FFDAC802" />
         <Button Grid.Row="2" Grid.Column="1" Name="btn8" Click="Button_Click" FontSize="100" Background="#FF86037B" BorderBrush="#FFDAC802" />
         <Button Grid.Row="2" Grid.Column="2" Name="btn9" Click="Button_Click" FontSize="100" Background="#FF690060" BorderBrush="#FFDAC802" />
-        <Button x:Name="RestartButton" Content="Restart?" Grid.Row="3" Grid.ColumnSpan="3" FontSize="36" FontFamily="Old English Text MT" Background="#FFA20000" BorderBrush="#FFDAC802" Click="RestartButton_Click"/>
+        <Button x:Name="RestartButton" Content="Restart?" Grid.Row="3" Grid.ColumnSpan="3" FontSize="36" FontFamily="Old English Text MT" Background="#FFA20000" BorderBrush="#FFDAC802" Click="RestartButton_Click" FontWeight="Bold"/>
 
     </Grid>
 </Window>
