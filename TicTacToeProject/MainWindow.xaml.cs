@@ -79,10 +79,12 @@ namespace TicTacToeProject
             Button button = (Button)sender;
             if (player1Turn)
             {
+                //☢
                 button.Content = "☢";
             }
             else
             {
+                //☣
                 button.Content = "☣";
             }
 
@@ -243,6 +245,7 @@ namespace TicTacToeProject
 
         #region DisableAllButtons
 
+        // Disables all the buttons
         private void DisableAllButtons()
         {
             btn1.IsEnabled = false;
