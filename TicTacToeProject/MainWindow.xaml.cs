@@ -107,6 +107,7 @@ namespace TicTacToeProject
                     // displays that player1 wins
                     MessageBox.Show("<Player ☢ Wins?>");
                 }
+
                 else
                 {
                     //throw new Exception("Testing");
@@ -115,6 +116,7 @@ namespace TicTacToeProject
                 }
 
                 #region not required code, it's just for my own intertainment
+
                 // Just a bunch of code that I added for fun and to add personality
 
                 /*
@@ -125,30 +127,35 @@ namespace TicTacToeProject
                 {
                     //throw new Exception("Testing");
                     //This is just a easter egg
-                    MessageBox.Show("One of us is a robot(⊙ˍ⊙)(⊙ˍ⊙)");
+                    MessageBox.Show("<One of us is a robot (⊙ˍ⊙) (⊙ˍ⊙)>");
                 }
+
                 if (turnCount == 8)
                 {
                     //throw new Exception("Testing");
                     //Just some more easter eggs
-                    MessageBox.Show("Big Brother Is Watching you (•_•) (•ˋ _ ˊ•)");
+                    MessageBox.Show("<Big Brother Is Watching you (•_•) (•ˋ _ ˊ•)>");
                 }
+
                 if (turnCount == 5)
                 {
                     //throw new Exception("Testing");
                     //Just some more easter eggs
-                    MessageBox.Show("┗|｀O′|┛");
+                    MessageBox.Show("<┗|｀O′|┛>");
                 }
-                if (turnCount < 3)
+
+                if (turnCount <= 3)
                 {
                     //Just some more easter eggs
-                    MessageBox.Show("(⊙_⊙)？");
+                    MessageBox.Show("<(⊙_⊙)？>");
                 }
+
                 if (turnCount == 1)
                 {
                     //Just some more easter eggs
-                    MessageBox.Show("Oh my God, he's pulling his hacks out!");
+                    MessageBox.Show("<Oh my God, he's pulling his hacks out!>");
                 }
+                
 
                 #endregion
 
@@ -156,7 +163,7 @@ namespace TicTacToeProject
 
                 //------------------------------------------------------------ Week 3 Finalization Begin -----------------------------------------------------------
             }
-
+            
             // If turn count reaches 9, when all buttons have been clicked, it displays that the game was a tie.
             else if (turnCount == 9)
             {
@@ -182,19 +189,19 @@ namespace TicTacToeProject
 
         public bool CheckForWinner()
         {
-            // Check the rows for a win
+            // Checks the rows for a win
             if (CheckLine(btn1, btn2, btn3) || CheckLine(btn4, btn5, btn6) || CheckLine(btn7, btn8, btn9))
             {
                 return true;
             }
 
-            // Check the columns for a win
+            // Checks the columns for a win
             if (CheckLine(btn1, btn4, btn7) || CheckLine(btn2, btn5, btn8) || CheckLine(btn3, btn6, btn9))
             {
                 return true;
             }
 
-            // Check the diagonals for a win
+            // Checks the diagonals for a win
             if (CheckLine(btn1, btn5, btn9) || CheckLine(btn3, btn5, btn7))
             {
                 return true;
@@ -214,7 +221,10 @@ namespace TicTacToeProject
         //------------------------------------------------------------ Week 4 Finalization Begin ----------------------------------------------------------
 
         #region CheckLine Method
-
+        /*
+          CheckLine checks whether or not a player has got 3 buttons in a line and if so it returns 
+          true, if not it returns false.
+        */
         public bool CheckLine(Button btn1, Button btn2, Button btn3)
         {
             if (btn1.IsEnabled == false && btn2.IsEnabled == false && btn3.IsEnabled == false &&
