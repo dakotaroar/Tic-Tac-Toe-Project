@@ -79,13 +79,13 @@ namespace TicTacToeProject
             Button button = (Button)sender;
             if (player1Turn)
             {
-                //☢
-                button.Content = "☢";
+                //Button Icons: ☢🦼💦⚜🛠⭕
+                button.Content = "🛠";
             }
             else
             {
-                //☣
-                button.Content = "☣";
+                //Button Icons: ☣🤺💸₯¤❌
+                button.Content = "₯";
             }
 
             //----------------------------------------------------------- Week 1 Finialization End -------------------------------------------------------------
@@ -107,14 +107,14 @@ namespace TicTacToeProject
                 {
                     //throw new Exception("Testing");
                     // displays that player1 wins
-                    MessageBox.Show("<Player ☢ Wins?>");
+                    MessageBox.Show("<Player 🛠 Wins?>");
                 }
 
                 else
                 {
                     //throw new Exception("Testing");
                     // displays that player2 wins
-                    MessageBox.Show("<Player ☣ Wins?>");
+                    MessageBox.Show("<Player ₯ Wins?>");
                 }
 
                 #region not required code, it's just for my own intertainment
