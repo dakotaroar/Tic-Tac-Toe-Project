@@ -19,15 +19,15 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Grid.Row="0" Grid.Column="0" Name="btn1" Click="Button_Click" FontSize="116" Background="#FF690060" BorderBrush="#FACD1E" FontFamily="Segoe UI Light" Foreground="#FF7F2122" />
-        <Button Grid.Row="0" Grid.Column="1" Name="btn2" Click="Button_Click" FontSize="116" Background="#66023C" BorderBrush="#FACD1E" FontFamily="Segoe UI Black" Foreground="#FF7F2122" />
-        <Button Grid.Row="0" Grid.Column="2" Name="btn3" Click="Button_Click" FontSize="116" Background="#FF690060" BorderBrush="#FACD1E" FontFamily="Segoe UI Light" Foreground="#FF7F2122" />
-        <Button Grid.Row="1" Grid.Column="0" Name="btn4" Click="Button_Click" FontSize="116" Background="#66023C" BorderBrush="#FACD1E" FontFamily="Segoe UI Black" Foreground="#FF7F2122" />
-        <Button Grid.Row="1" Grid.Column="1" Name="btn5" Click="Button_Click" FontSize="116" Background="#FF690060" BorderBrush="#FACD1E" FontFamily="Segoe UI Light" Foreground="#FF7F2122" />
-        <Button Grid.Row="1" Grid.Column="2" Name="btn6" Click="Button_Click" FontSize="116" Background="#66023C" BorderBrush="#FACD1E" FontFamily="Segoe UI Black" Foreground="#FF7F2122" />
-        <Button Grid.Row="2" Grid.Column="0" Name="btn7" Click="Button_Click" FontSize="116" Background="#FF690060" BorderBrush="#FACD1E" FontFamily="Segoe UI Light" Foreground="#FF7F2122" />
-        <Button Grid.Row="2" Grid.Column="1" Name="btn8" Click="Button_Click" FontSize="116" Background="#66023C" BorderBrush="#FACD1E" FontFamily="Segoe UI Black" Foreground="#FF7F2122" />
-        <Button Grid.Row="2" Grid.Column="2" Name="btn9" Click="Button_Click" FontSize="116" Background="#FF690060" BorderBrush="#FACD1E" FontFamily="Segoe UI Light" Foreground="#FF7F2122" />
+        <Button Grid.Row="0" Grid.Column="0" Name="btn1" Click="Button_Click" FontSize="116" Background="#FF690060" BorderBrush="#FACD1E" FontFamily="Old English Text MT" Foreground="#FF7F2122" FontStyle="Italic" />
+        <Button Grid.Row="0" Grid.Column="1" Name="btn2" Click="Button_Click" FontSize="116" Background="#66023C" BorderBrush="#FACD1E" FontFamily="Old English Text MT" Foreground="#FF7F2122" FontWeight="Bold" />
+        <Button Grid.Row="0" Grid.Column="2" Name="btn3" Click="Button_Click" FontSize="116" Background="#FF690060" BorderBrush="#FACD1E" FontFamily="Old English Text MT" Foreground="#FF7F2122" FontStyle="Italic" />
+        <Button Grid.Row="1" Grid.Column="0" Name="btn4" Click="Button_Click" FontSize="116" Background="#66023C" BorderBrush="#FACD1E" FontFamily="Old English Text MT" Foreground="#FF7F2122" FontWeight="Bold" />
+        <Button Grid.Row="1" Grid.Column="1" Name="btn5" Click="Button_Click" FontSize="116" Background="#FF690060" BorderBrush="#FACD1E" FontFamily="Old English Text MT" Foreground="#FF7F2122" FontStyle="Italic" />
+        <Button Grid.Row="1" Grid.Column="2" Name="btn6" Click="Button_Click" FontSize="116" Background="#66023C" BorderBrush="#FACD1E" FontFamily="Old English Text MT" Foreground="#FF7F2122" FontWeight="Bold" />
+        <Button Grid.Row="2" Grid.Column="0" Name="btn7" Click="Button_Click" FontSize="116" Background="#FF690060" BorderBrush="#FACD1E" FontFamily="Old English Text MT" Foreground="#FF7F2122" FontStyle="Italic" />
+        <Button Grid.Row="2" Grid.Column="1" Name="btn8" Click="Button_Click" FontSize="116" Background="#66023C" BorderBrush="#FACD1E" FontFamily="Old English Text MT" Foreground="#FF7F2122" FontWeight="Bold" />
+        <Button Grid.Row="2" Grid.Column="2" Name="btn9" Click="Button_Click" FontSize="116" Background="#FF690060" BorderBrush="#FACD1E" FontFamily="Old English Text MT" Foreground="#FF7F2122" FontStyle="Italic" />
         <Button x:Name="RestartButton" Content="Restart?" Grid.Row="3" Grid.ColumnSpan="3" FontSize="55" FontFamily="Old English Text MT" Background="#7F2122" BorderBrush="#FFFACD1E" Click="RestartButton_Click" Foreground="Black" FontWeight="Bold"/>
 
     </Grid>

@@ -16,7 +16,6 @@ using System.Windows.Shapes;
 
 namespace TicTacToeProject
 {
-    //------------------------------------------------------------ Week 1 Finialization Begin ------------------------------------------------------------
     public partial class MainWindow : Window
     {
 
@@ -80,17 +79,13 @@ namespace TicTacToeProject
             if (player1Turn)
             {
                 //Button Icon Alternatives: ☢ 🦼 💦 ⚜ 🛠 ⭕
-                button.Content = "☢";
+                button.Content = "O";
             }
             else
             {
                 //Button Icon Alternatives: ☣ 🤺 💸 ₯ ¤ ❌
-                button.Content = "☣";
+                button.Content = "X";
             }
-
-            //----------------------------------------------------------- Week 1 Finialization End -------------------------------------------------------------
-
-            //----------------------------------------------------------- Week 2 Finialization Begin -----------------------------------------------------------
 
             // Disables the button when clicked
             button.IsEnabled = false;
@@ -107,14 +102,14 @@ namespace TicTacToeProject
                 {
                     //throw new Exception("Testing");
                     // displays that player1 wins
-                    MessageBox.Show("<Player ☢ Wins?>");
+                    MessageBox.Show("<Player O Wins?>");
                 }
 
                 else
                 {
                     //throw new Exception("Testing");
                     // displays that player2 wins
-                    MessageBox.Show("<Player ☣ Wins?>");
+                    MessageBox.Show("<Player X Wins?>");
                 }
 
                 #region not required code, it's just for my own intertainment
@@ -157,13 +152,9 @@ namespace TicTacToeProject
                     //Just some more easter eggs
                     MessageBox.Show("<Oh my God, he's pulling his hacks out!>");
                 }
-                
 
                 #endregion
 
-                //------------------------------------------------------------ Week 2 Finialization End ------------------------------------------------------------
-
-                //------------------------------------------------------------ Week 3 Finalization Begin -----------------------------------------------------------
             }
             
             // If turn count reaches 9, when all buttons have been clicked, it displays that the game was a tie.
@@ -218,10 +209,6 @@ namespace TicTacToeProject
 
         #endregion
 
-        //------------------------------------------------------------ Week 3 Finalization End ------------------------------------------------------------
-
-        //------------------------------------------------------------ Week 4 Finalization Begin ----------------------------------------------------------
-
         #region CheckLine Method
         /*
           CheckLine checks whether or not a player has got 3 buttons in a line and if so it returns 
@@ -260,10 +247,6 @@ namespace TicTacToeProject
         }
 
         #endregion
-
-        
-
-        //------------------------------------------------------------ Week 4 Finalization End ------------------------------------------------------------
 
     }
 }
