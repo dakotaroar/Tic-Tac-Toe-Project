@@ -79,13 +79,13 @@ namespace TicTacToeProject
             Button button = (Button)sender;
             if (player1Turn)
             {
-                //Button Icons: ☢🦼💦⚜🛠⭕
-                button.Content = "🛠";
+                //Button Icon Alternatives: ☢ 🦼 💦 ⚜ 🛠 ⭕
+                button.Content = "☢";
             }
             else
             {
-                //Button Icons: ☣🤺💸₯¤❌
-                button.Content = "₯";
+                //Button Icon Alternatives: ☣ 🤺 💸 ₯ ¤ ❌
+                button.Content = "☣";
             }
 
             //----------------------------------------------------------- Week 1 Finialization End -------------------------------------------------------------
@@ -107,14 +107,14 @@ namespace TicTacToeProject
                 {
                     //throw new Exception("Testing");
                     // displays that player1 wins
-                    MessageBox.Show("<Player 🛠 Wins?>");
+                    MessageBox.Show("<Player ☢ Wins?>");
                 }
 
                 else
                 {
                     //throw new Exception("Testing");
                     // displays that player2 wins
-                    MessageBox.Show("<Player ₯ Wins?>");
+                    MessageBox.Show("<Player ☣ Wins?>");
                 }
 
                 #region not required code, it's just for my own intertainment
@@ -185,8 +185,8 @@ namespace TicTacToeProject
         #region CheckForWinner
 
         /* 
-         CheckForWinner is a boolian which every turn checks if a player matches one of the conditions
-         needed to win it returns true. When CheckForWinner is run when no player meets the requirements it returns false.
+         CheckForWinner is a boolian which checks if a player matches one of the conditions needed to
+         win. It returns true if one does meet the conditions. When CheckForWinner is run when no player meets the requirements it returns false.
         */
 
         public bool CheckForWinner()
